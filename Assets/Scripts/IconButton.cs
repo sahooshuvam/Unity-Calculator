@@ -44,6 +44,7 @@ public class IconButton : MonoBehaviour
                 CalculatorController.Instance.AppendString(Icon);
                 break;
             case IconType.Equal:
+                CalculatorController.Instance.CalculateResult();
                 break;
             case IconType.Clear:
                 CalculatorController.Instance.ClearString();

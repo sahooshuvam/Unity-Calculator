@@ -1968,7 +1968,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 134ab1d5c39b544448b620145a5fdeda, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3d22feca74fc2454f879af75dac6fd4f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3035,7 +3035,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   iconButton: {fileID: 0}
   Type: 2
-  Icon: x
+  Icon: '*'
 --- !u!1 &1257963743
 GameObject:
   m_ObjectHideFlags: 0
@@ -3384,7 +3384,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   iconButton: {fileID: 0}
   Type: 2
-  Icon: "\xF7"
+  Icon: /
 --- !u!1 &1449527202
 GameObject:
   m_ObjectHideFlags: 0
@@ -3826,6 +3826,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayText: {fileID: 1163661316}
+  resultString: 
 --- !u!4 &1543367408
 Transform:
   m_ObjectHideFlags: 0
@@ -4044,7 +4045,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1080, y: 2400}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
