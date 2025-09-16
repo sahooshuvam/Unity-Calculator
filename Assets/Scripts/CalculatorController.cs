@@ -96,6 +96,21 @@ public class CalculatorController : MonoBehaviour
         UpdateDisplay();
     }
 
+    public void RemoveLastCharacter()
+    {
+        if(!string.IsNullOrEmpty(resultString) || resultString.Length > 0)
+        {
+            resultString = resultString.Substring(0, resultString.Length - 1);
+            if(string.IsNullOrEmpty(resultString))
+            {
+                resultString = "0";
+            }
+            else 
+            {
+                UpdateDisplay();
+            }
+        }
+    }
    public void CalculateResult()
    {
         try
