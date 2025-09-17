@@ -115,10 +115,13 @@ public class CalculatorController : MonoBehaviour
    {
         try
         {
-            string expression = resultString.Replace("x", "*");
-            var dataTable = new System.Data.DataTable();
-            var value = dataTable.Compute(expression, "");
-            resultString = Convert.ToDouble(value).ToString();
+            if (string.IsNullOrEmpty(resultString))
+            {
+                displayText.text = "0";
+                return;
+            }
+            double result = Utility.Calculate(resultString);
+            resultString = result.ToString();
         }
         catch (Exception e)
         {
